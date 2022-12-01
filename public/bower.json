@@ -1,0 +1,24 @@
+{
+  "name": "AngularJS Laravel Gallery App",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Pollard <mickeymakesapps88@gmail.com>"
+  ],
+  "description": "SPA using AngularJS for frontend and Laravel for backend",
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.8.3",
+    "bootstrap": "3.3.5",
+    "angular-cookies": "^1.8.3"
+  }
+}
