@@ -23,3 +23,26 @@ myApp.config(['$routeProvider', '$locationProvider',
         $routeProvider.otherwise('/');
     }
 ]);
+
+myApp.controller('userController', ['$scope', '$http', function($scope, $http) {
+    console.log('Inside the userController!');
+    angular.extend($scope, {
+        doLogin: function(loginForm) {
+            $http({
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                url: baseUrl + 'auth',
+                method: "POST",
+                data: {
+                    email: $scope.login.username,
+                    password: $scope.login.password
+                }
+            }).then(function(response) {
+                console.log("Response: ", response);
+            }, function(error) {
+                console.log("Error: ", error);
+            });
+        }
+    });
+}]);

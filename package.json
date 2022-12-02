@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.7.14"
     },
     "dependencies": {
-        "gulp": "^4.0.2"
+        "gulp": "^4.0.2",
+        "less": "^4.1.3"
     }
 }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.css') }}">
     <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ 'css/app.css' }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script>var baseUrl = "{{ url('/') }}/";</script>
     <title>AngularJS & Laravel Gallery App</title>
 </head>
 <body>
@@ -19,6 +20,6 @@
     <script src="{{ asset('bower_components/angular-route/angular-route.min.js') }}"></script>
     <script src="{{ asset('bower_components/angular-cookies/angular-cookies.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/controllers/userController.js') }}"></script>
+{{--    <script src="{{ asset('js/controllers/userController.js') }}"></script>--}}
 </body>
 </html>

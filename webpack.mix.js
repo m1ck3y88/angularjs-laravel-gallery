@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-console.log("mix: ", mix);
 
 /*
  |--------------------------------------------------------------------------
@@ -12,6 +11,6 @@ console.log("mix: ", mix);
  |
  */
 
-mix.js('resources/js/controllers/userController.js', 'public/js/controllers')
-    .js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js')
+    // .js('resources/js/controllers/userController.js', 'public/js/controllers')
     .sass('resources/sass/app.scss', 'public/css');
