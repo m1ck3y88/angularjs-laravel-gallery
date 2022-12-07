@@ -19,7 +19,7 @@ class UserController extends Controller
 
         // if the credentials are wrong
         if (!Auth::attempt($credentials)) {
-            return response('Username and/or password does not match', 403);
+            return response('Username and/or password is incorrect', 403);
         }
 
         return response(Auth::user(), 201);

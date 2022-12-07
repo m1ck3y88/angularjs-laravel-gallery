@@ -13,7 +13,7 @@
     <title>AngularJS & Laravel Gallery App</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-controller="globalController">
         <div class="ng-view"></div>
     </div>
     <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>

@@ -11,6 +11,9 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
+
+    // Default User Password
+    // Illuminate\Support\Facades\Hash::make('password');
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
